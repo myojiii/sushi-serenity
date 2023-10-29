@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange and White Website</title>
+    <style>
+        body {
+            background-color: #FE973A; /* Pastel Orange background */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .white-square {
+            position: relative; /* Allow absolute positioning inside */
+            width: 90%; /* Use a percentage width */
+            max-width: 1600px; /* Limit the maximum width */
+            height: 90%; /* Use a percentage height */
+            max-height: 1000px; /* Limit the maximum height */
+            background-color: #F5F5F5;
+            border: 5px solid #FFF; /* Add a white border */
+            border-radius: 20px; /* Rounded corners for smoother edges */
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 70px;
+            width: 70px;
+            height: auto;
+        }
+
+        .store-name {
+            position: absolute;
+            top: 40px;
+            left: 160px;
+            font-size: 40px;
+            font-weight: bold;
+            white-space: nowrap;
+            animation: colorChange 3s infinite;
+        }
+
+        .phrase {
+            position: absolute;
+            top: 130px;
+            left: 70px;
+            font-size: 100px;
+            font-weight: bold;
+            white-space: nowrap;
+            color: #333;
+        }
+
+        .finest {
+            color: #f1ad59;
+            animation: highlight 3s infinite;
+        }
+
+        .paragraph {
+            position: absolute;
+            top: 360px;
+            left: 70px;
+            font-size: 22px;
+            color: #333;
+            line-height: 1.50;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 580px;
+            left: 150px;
+            display: inline-block;
+        }
+
+        .button-container-contact {
+            position: absolute;
+            top: 580px;
+            left: 390px;
+            display: inline-block;
+        }
+
+        .button {
+            padding: 20px 40px;
+            border-radius: 50px;
+            background: linear-gradient(45deg, #f1b650, #FF9A18);
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 3%;
+            right: 10%;
+            list-style: none;
+        }
+
+        .navigation li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #f3780c;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .big-image {
+            position: absolute;
+            top: 60px;
+            right: 60px;
+            max-width: 550px;
+        }
+
+        .bottom-left-image {
+            position: absolute;
+            bottom: -110px;
+            left: 120px;
+            max-width: 700px;
+        }
+
+        @keyframes colorChange {
+            0%, 10% {
+                color: #F47C00;
+            }
+            20%, 30% {
+                color: #A6AE3E;
+            }
+            40%, 50% {
+                color: #f1ad59;
+            }
+            60%, 70% {
+                color: #F4C303;
+            }
+            80%, 90% {
+                color: #ED4A07;
+            }
+        }
+
+        @keyframes highlight {
+            0%, 100% {
+                background: none;
+                color: #f1ad59;
+            }
+            50% {
+                background: #f1ad59;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="white-square">
+        <img src="sushi logo.png" alt="Logo" class="logo">
+        <div class="store-name"><span style="color: #F47C00;">S</span>us<span style="color: #A6AE3E;">h</span>i<span style="color:#f1ad59;"> S</span>e<span style="color: #F4C303;">r</span>e<span style="color: #ED4A07;">n</span>i<span style="color: #FFC784;">t</span>y</div>
+        <div class="phrase">Savor the <span class="finest">Finest</span> Sushi<br>in Sushi Serenity</div>
+        <p class="paragraph">At Sushi Serenity, we invite you on a journey of culinary bliss,<br> where the delicate art of sushi preparation meets the serenity of an unforgettable 
+            <br>dining experience. Nestled in the heart of Bulacan, our restaurant is a hidden gem,<br> where each visit promises an exquisite fusion of taste and tranquility.</p>
+        <div class="button-container">
+            <a href="menu.html" class="button">Check Menu</a>
+        </div>
+        <div class= "button-container-contact">
+            <a href="#" class="button">Contact Us</a>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li> <!-- Link to the new menu page -->
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="home pic.png" alt="Big Image" class="big-image">
+    </div>
+
+    <img src="bottom pic.png" alt="Bottom Left Image" class="bottom-left-image">
+</body>
+</html>
